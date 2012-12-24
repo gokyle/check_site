@@ -11,11 +11,6 @@ import (
 	"time"
 )
 
-type Status struct {
-	Status    string `json="status"`
-	Timestamp string `json="timestamp"`
-}
-
 var shouldSpeak = true
 var timeoutDuration time.Duration
 var checkProtoScheme = regexp.MustCompile("^https?://")
